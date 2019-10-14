@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>BattleShip Game Sergio Duarte </title>
+
+</head>
+<body>
+<div id="vue-battle">
+    <h1>Salvo Game Test</h1>
+    <ol v-for="game in gamesData">
+        <li>{{game.created}}</li>
+        <ol v-for="player in playerData">
+            <li>{{player.player}}</li>
+
+
+        </ol>
+    </ol>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./scripts/games.js"></script>
+</body>
+</html>
